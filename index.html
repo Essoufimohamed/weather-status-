@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>weather status</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Check weather status</h1>
+            <div class="form">
+                <div class="inputBox">
+                    <input type="number" id="number" placeholder="temperate" />
+                    <select name="temperate" id="temperate">
+                        <option value="celsius">°C</option>
+                        <option value="fahrenheit">°F</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="weatherStatus()">
+                    get status
+                </button>
+                <div id="convertTemerature"></div>
+            </div>
+            <div class="status" id="statusWeather">
+                <img id="imgStatus" src="" alt="" />
+                <div id="messageStatus"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(202, 240, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    background-color: #fff;
+    width: 500px;
+    box-shadow: 1px 2px 9px rgba(0, 0, 0,0.3);
+    border-radius: 20px;
+    padding: 40px 20px;
+
+    h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form{
+        .inputBox{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+    
+            input{
+                flex: 1;
+                height: 40px;
+                padding: 8px;
+                border: 1px solid #026587;
+                border-radius: 10px;
+                font-size: 18px;
+            }
+            select{
+                background-color: azure;
+                border-radius: 5px;
+                font-weight: 800;
+            }
+        }
+
+        .btn{
+            width: 150px;
+            height: 40px;
+            background-color: rgb(0, 128, 79);
+            color: #fff;
+            font-size: 1.1rem;
+            text-transform: capitalize;
+            border-color:rgb(0, 128, 79) ;
+            border-radius: 10px;
+            outline: none;
+            display: block;
+            margin-inline: auto;
+        }
+    }
+
+
+    .status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        img{
+            width: 200px;
+        }
+
+        #messageStatus{
+            font-size: 1.4rem;
+            background-color: #d4eef6;
+            padding: 10px 15px;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+}
